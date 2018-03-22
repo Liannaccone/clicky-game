@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "teal",
+    "image": "./images/01-gwt.jpg"
+  },  
+  {
+    "id": 2,
+    "name": "teal-water",
+    "image": "./images/02-gwt.jpg"
+  },
+  {
+    "id": 3,
+    "name": "pintail-water",
+    "image": "./images/03-pintail.jpg"
+  },
+  {
+    "id": 4,
+    "name": "pintail",
+    "image": "./images/04-pintail.jpg"
+  },
+  {
+    "id": 5,
+    "name": "wigeon-water",
+    "image": "./images/05-wigeon.jpg"
+  },
+  {
+    "id": 6,
+    "name": "wigeon",
+    "image": "./images/06-wigeon.jpg"
+  },
+  {
+    "id": 7,
+    "name": "wood",
+    "image": "./images/07-wood.jpg"
+  },
+  {
+    "id": 8,
+    "name": "wood-water",
+    "image": "./images/08-wood.jpg"
+  },
+  {
+    "id": 9,
+    "name": "mallard",
+    "image": "./images/09-mallard.jpg"
+  },
+  {
+    "id": 10,
+    "name": "mallard-water",
+    "image": "./images/10-mallard.jpg"
+  },
+  {
+    "id": 11,
+    "name": "canvas-water",
+    "image": "./images/11-canvas.jpg"
+  },
+  {
+    "id": 12,
+    "name": "canvas",
+    "image": "./images/12-canvas.jpg"
+  }
+]
+

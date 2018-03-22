@@ -1,7 +1,9 @@
 import React from "react";
 
-	<div>
-		<img src={imgSrc} alt={name} height="300" width="300" />
+const GameCard = props => (
+	<div className="img-container">
+		<img src={props.image} alt={props.name} height="250" width="300" />
 	</div>
+);
 
 export default GameCard;
