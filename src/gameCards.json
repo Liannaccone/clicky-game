@@ -8,7 +8,8 @@
   {
     "id": 2,
     "name": "teal-water",
-    "image": "./images/02-gwt.jpg"
+    "image": "./images/02-gwt.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 3,

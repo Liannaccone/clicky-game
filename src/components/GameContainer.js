@@ -1,36 +1,52 @@
-import React, { Component } from "react";
+import React from "react";
 import GameCard from "./GameCard";
 import gameCards from "../gameCards.json";
 
 export default class GameContainer extends React.Component {
 	state = {
 		gameCards,
+		counter: 0,
+		topScore: 0
 	};
 
 	userClick = id => {
-	 	let clickStatus = this.state.hasBeenClicked
-	 	if(!clickstatus) {
-			this.setState({hasBeenClicked: !clickStatus})
-	 	} else {
-	 		endGame();
-	 	}
+		let counter = this.state.counter + 1
+		let shouldGameEnd = false
+	 	let gameCards = this.state.gameCards.map(gameCard => {
+	 		if (gameCard.id === id) {
+	 			if(gameCard.hasBeenClicked) {
+	 				shouldGameEnd = true
+	 			}
+	 			return {...gameCard, hasBeenClicked: true};
+	 		}
+	 		return gameCard;
+		});
+		if(shouldGameEnd) {
+			gameCards = this.state.gameCards.map(gameCard => ({...gameCard, hasBeenClicked: false}));
+			counter = 0;
+			if(this.state.counter > this.state.topScore) {
+				this.setState({topScore: this.state.counter});
+			}
+		}
+		this.setState({gameCards, counter});
 	}
 
 	shuffleGameCards = () => {
-		// shuffle here
+		this.setState
 	}
 
 	render() {
+		// console.log(this.state)
 		return (
 			<div>
-				{this.state.gameCards.map(card => (
+				{this.state.gameCards.map(gameCard => (
 					<GameCard
-						hasBeenClicked={this.state.hasBeenClicked}
+						hasBeenClicked={gameCard.hasBeenClicked}
 						userClick={this.userClick}
-						id={card.id}
-						key={card.id}
-						name={card.name}
-						image={card.image}
+						id={gameCard.id}
+						key={gameCard.id}
+						name={gameCard.name}
+						image={gameCard.image}
 					/>
 				))}
 			</div>
