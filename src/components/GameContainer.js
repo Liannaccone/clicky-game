@@ -5,14 +5,15 @@ import gameCards from "../gameCards.json";
 export default class GameContainer extends React.Component {
 	state = {
 		gameCards,
-		hasBeenClicked: false
 	};
 
 	userClick = id => {
 	 	let clickStatus = this.state.hasBeenClicked
-		this.setState({
-			hasBeenClicked: !clickStatus
-		})
+	 	if(!clickstatus) {
+			this.setState({hasBeenClicked: !clickStatus})
+	 	} else {
+	 		endGame();
+	 	}
 	}
 
 	shuffleGameCards = () => {
@@ -21,7 +22,7 @@ export default class GameContainer extends React.Component {
 
 	render() {
 		return (
-			<div className='container'>
+			<div>
 				{this.state.gameCards.map(card => (
 					<GameCard
 						hasBeenClicked={this.state.hasBeenClicked}

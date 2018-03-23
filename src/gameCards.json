@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "teal",
-    "image": "./images/01-gwt.jpg"
+    "image": "./images/01-gwt.jpg",
+    "hasBeenClicked": false
   },  
   {
     "id": 2,
@@ -12,52 +13,62 @@
   {
     "id": 3,
     "name": "pintail-water",
-    "image": "./images/03-pintail.jpg"
+    "image": "./images/03-pintail.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 4,
     "name": "pintail",
-    "image": "./images/04-pintail.jpg"
+    "image": "./images/04-pintail.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 5,
     "name": "wigeon-water",
-    "image": "./images/05-wigeon.jpg"
+    "image": "./images/05-wigeon.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 6,
     "name": "wigeon",
-    "image": "./images/06-wigeon.jpg"
+    "image": "./images/06-wigeon.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 7,
     "name": "wood",
-    "image": "./images/07-wood.jpg"
+    "image": "./images/07-wood.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 8,
     "name": "wood-water",
-    "image": "./images/08-wood.jpg"
+    "image": "./images/08-wood.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 9,
     "name": "mallard",
-    "image": "./images/09-mallard.jpg"
+    "image": "./images/09-mallard.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 10,
     "name": "mallard-water",
-    "image": "./images/10-mallard.jpg"
+    "image": "./images/10-mallard.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 11,
     "name": "canvas-water",
-    "image": "./images/11-canvas.jpg"
+    "image": "./images/11-canvas.jpg",
+    "hasBeenClicked": false
   },
   {
     "id": 12,
     "name": "canvas",
-    "image": "./images/12-canvas.jpg"
+    "image": "./images/12-canvas.jpg",
+    "hasBeenClicked": false
   }
 ]
 
