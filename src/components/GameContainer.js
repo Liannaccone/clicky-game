@@ -47,7 +47,10 @@ export default class GameContainer extends React.Component {
 							<h1><strong>Clicky Game</strong></h1>
 						</li>
 						<li className='message'>
-							<h2>Click an image to begin!</h2>
+							<h2>{this.state.message}</h2>
+						</li>
+						<li className="scoreBoard">
+							<h2><span> Score: {this.state.counter} | Top Score: {this.state.topScore} </span></h2>
 						</li>
 					</ul>
 				</nav>
