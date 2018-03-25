@@ -1,6 +1,7 @@
 import React from "react";
 import GameCard from "./GameCard";
 import gameCards from "../gameCards.json";
+import './GameContainer.css';
 
 export default class GameContainer extends React.Component {
 	state = {
@@ -41,19 +42,21 @@ export default class GameContainer extends React.Component {
 		// console.log(this.state)
 		return (
 			<div>
-				<nav className='navbar'>
-					<ul>
-						<li className='brand'>
-							<h1><strong>Clicky Game</strong></h1>
-						</li>
-						<li className='message'>
-							<h2>{this.state.message}</h2>
-						</li>
-						<li className="scoreBoard">
-							<h2><span> Score: {this.state.counter} | Top Score: {this.state.topScore} </span></h2>
-						</li>
-					</ul>
-				</nav>
+				<header>
+					<nav className='navbar'>
+						<ul>
+							<li className='brand'>
+								<h1><strong>Clicky Game</strong></h1>
+							</li>
+							<li className='message'>
+								<h2>{this.state.message}</h2>
+							</li>
+							<li className="scoreBoard">
+								<h2><span> Score: {this.state.counter} | Top Score: {this.state.topScore} </span></h2>
+							</li>
+						</ul>
+					</nav>
+				</header>
 				<div className="container">
 					{this.state.gameCards.map(gameCard => (
 						<GameCard
